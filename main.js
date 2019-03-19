@@ -1,6 +1,6 @@
 //main.js
 $(function(){
-	
+	//Prueba
 
 	var app_id = '2141714505905636'; //Aquí se sustituye por el id de desarrollo que porporciona Facebook
 	var scopes = 'email, user_friends, user_hometown, user_birthday, user_location';
