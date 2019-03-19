@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+* {
+	border: 0;
+	margin: 0;
+	padding:0;
+}
+
+h1{
+	background-color: #fafafa;
+  	margin: 1rem;
+  	padding: 1rem;
+  	border: 2px solid #ccc;
+  	text-align: center;
+	background; #FFF;
+	border:0.1em solid #FF00FF;
+	border-radius: 1em;}
+	
+h5{
+	background-color: #fafafa;
+  	margin: 1rem;
+  	padding: 1rem;
+  	border: 2px solid #ccc;
+  	text-align: center;
+	background; #FFF;
+	border:0.1em solid #FF00FF;
+	border-radius: 1em;
+}
+	
+p{
+	background; #FFF;
+	border:0.1em solid #FF00FF;
+	border-radius: 1em;
+	height: 3em;
+	width:20em;	
+	vertical-align: top;
+	text-align: center;
+}
+
+.centrar{
+  background-color: #fafafa;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  text-align: center;
+}
+

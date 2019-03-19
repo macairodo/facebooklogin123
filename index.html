@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Facebook Login JavaScript Example</title>
+<meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<link rel="stylesheet" href="estilos.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Para enmascarar la url se puede utilizar frameset, frameworks como spring, .. -->
+
+</head>
+<body>
+        <div id="fb-root"></div>
+
+        <script>
+        
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+	
+        </script>
+		<div class="centrar">
+       <!--  Se hace uso de CSS solo como ejemplo para el tag <h1> -->
+		<h1>Logeo para Facebook</h1>
+		
+		<!-- Para el formato de las columnas se usa bootstrap -->		
+        <div class="container" >
+        	
+   			<div class="row">
+   				<div class="col-sm-4">
+       				
+   				</div>
+   				<div class="col-sm-4" >
+       				<p id="t1">nombre!</p>
+   				</div>
+   				<div class="col-sm-4">
+       				
+   				</div>
+   			</div>
+   			<div class="row">
+   				<div class="col-sm-4">
+       				
+   				</div>
+   				<div class="col-sm-4">
+       				<p id="t2">correo!</p>
+   				</div>
+   				<div class="col-sm-4">
+       				
+   				</div>
+   			</div>
+   			<div class="row">
+   				<div class="col-sm-4">
+       				
+   				</div>
+   				<div class="col-sm-4">
+       				<p id="t3">cumpleaños!</p>
+   				</div>
+   				<div class="col-sm-4">
+       				
+   				</div>
+   			</div>
+   			<div class="row">
+   				<div class="col-sm-4">
+       				
+   				</div>
+   				<div class="col-sm-4">
+       				<p id="t4">location!</p>
+       	   		</div>
+   			
+   				<div class="col-sm-4">
+       				
+   				</div>
+   			</div>
+   			<!--  Aquì pueden ir los parametros adicionales en columnas, -->
+		</div>
+		
+		
+		<br/>
+		
+		<h5>Para iniciar Sesi&oacuten, Pulsar Boton</h5>
+		<div class="container" >
+		<div class="row d-flex justify-content-center">
+        		<div class="col-sm-3">
+       				
+   				</div>
+   				<div class="col-sm-3">
+       				<a href="#" id='login' onclick="login();" class="btn btn-primary center-block">Inicia Sesion</a><br/>
+       				<h2></h2>
+   				</div>
+   				<div class="col-sm-3">
+   					<!--  SE puede desplegar el boton desde  -->
+   					
+       				<a href="#" id='logout' onclick="logout();" class="btn btn-primary center-block">Cierra sesion</a><br/>
+       				
+   				</div>
+   				<div class="col-sm-3">
+       				
+   				</div>
+   		</div>
+   		</div>
+		
+   	<!-- Lo ideal a mi parecer es utilizar un frame work que ocultarìa la url, ademas que permitiria la verificacion
+   	de los valores que se pararían al despliegue de resultado -->
+
+</body>
+</html>
